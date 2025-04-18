@@ -13,14 +13,23 @@
 </head>
 <body>
     <header><img src="images/chanchal yadav.png"></header>
-    <nav>
+    <nav class="nav-container">
+      <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="digitalArt.html">Textiles</a>
-        <a href="graphicdesign.html">Graphic Desgin</a>
-        <a href="layoutdesign.html">Layout Desgin</a>
-        <a href="uiuxdesign.html">UI/UX Design</a>
+        <a href="graphicDesign.html">Graphic Design</a>
+        <a href="layoutDesign.html">Layout Design</a>
+        <a href="uiuxDesign.html">UI/UX Design</a>
+        <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
+      </div>
     </nav>
+    <script>
+      document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.toggle('active');
+      });
+    </script>
     <section class="scroll-section">
         <h2 style="font-weight: bolder;">POSTERS</h2>
         <div class="scroll-container">

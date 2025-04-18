@@ -13,21 +13,30 @@
 </head>
 <body>
   <header><img src="images/chanchal yadav.png"></header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="digitalArt.html">Textiles</a>
-        <a href="graphicdesign.html">Graphic Desgin</a>
-        <a href="layoutdesign.html">Layout Desgin</a>
-        <a href="uiuxdesign.html">UI/UX Design</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <nav class="nav-container">
+    <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="digitalArt.html">Textiles</a>
+      <a href="graphicDesign.html">Graphic Design</a>
+      <a href="layoutDesign.html">Layout Design</a>
+      <a href="uiuxDesign.html">UI/UX Design</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
     
       <main class="contact-page">
         <h1>Get in Touch</h1>
         <p>I’d love to hear from you. Feel free to reach out via the form below or through social media.</p>
     
         <form class="contact-form" action="mailto:your@email.com" method="POST" enctype="text/plain">
-          <input style="width: 600px;" type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
           <button type="submit">Send Message</button>
