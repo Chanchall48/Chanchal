@@ -377,8 +377,8 @@ footer p {
 }
 
 .cv-image {
+  padding-top: 2%;
   flex: 0 0 300px;
-  align-self: stretch;
 }
 
 .cv-image img {
