@@ -369,7 +369,7 @@ footer p {
   display: flex;
   gap: 60px;
   align-items: flex-start;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .cv-content {
