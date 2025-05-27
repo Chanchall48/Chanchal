@@ -134,6 +134,21 @@ h1 {
   margin-right: 10px;
 }
 
+.project-wrapper {
+  display: flex;
+  justify-content: center;    
+  align-items: flex-start;     
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.project-content {
+  max-width: 1000px;          
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
 .uigrid {
   display: flex;
   flex-wrap: wrap;
